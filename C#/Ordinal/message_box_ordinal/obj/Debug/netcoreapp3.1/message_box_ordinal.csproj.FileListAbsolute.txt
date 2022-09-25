@@ -1,0 +1,13 @@
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.exe
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.deps.json
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.runtimeconfig.json
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.runtimeconfig.dev.json
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.dll
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\bin\Debug\netcoreapp3.1\message_box_ordinal.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.AssemblyInfoInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.AssemblyInfo.cs
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.csproj.CoreCompileInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.dll
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\message_box_ordinal\message_box_ordinal\obj\Debug\netcoreapp3.1\message_box_ordinal.genruntimeconfig.cache
