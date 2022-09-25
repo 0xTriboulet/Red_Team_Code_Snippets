@@ -1,0 +1,14 @@
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.exe
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.deps.json
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.runtimeconfig.json
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.runtimeconfig.dev.json
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.dll
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\bin\Debug\netcoreapp3.1\PInvoke.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.csproj.AssemblyReference.cache
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.AssemblyInfoInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.AssemblyInfo.cs
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.csproj.CoreCompileInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.dll
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\PInvoke\PInvoke\obj\Debug\netcoreapp3.1\PInvoke.genruntimeconfig.cache
