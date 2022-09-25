@@ -1,0 +1,14 @@
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.exe
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.deps.json
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.runtimeconfig.json
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.runtimeconfig.dev.json
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.dll
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\bin\Debug\netcoreapp3.1\CreateProcess.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.csproj.AssemblyReference.cache
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.AssemblyInfoInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.AssemblyInfo.cs
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.csproj.CoreCompileInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.dll
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\CreateProcess\CreateProcess\obj\Debug\netcoreapp3.1\CreateProcess.genruntimeconfig.cache
