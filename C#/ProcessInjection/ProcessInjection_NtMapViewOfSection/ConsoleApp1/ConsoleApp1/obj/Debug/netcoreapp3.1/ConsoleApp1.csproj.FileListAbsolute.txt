@@ -1,0 +1,13 @@
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\ProcessInjection_NtMapViewOfSection\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
