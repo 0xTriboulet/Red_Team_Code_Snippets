@@ -1,0 +1,17 @@
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.csproj.AssemblyReference.cache
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.AssemblyInfoInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.AssemblyInfo.cs
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.csproj.CoreCompileInputs.cache
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.exe
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.deps.json
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.runtimeconfig.json
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.runtimeconfig.dev.json
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.dll
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\MessageBoxW_DInvoke.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\DInvoke.dll
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\bin\Debug\netcoreapp3.1\DInvoke.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.csproj.CopyComplete
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.dll
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.pdb
+C:\Users\0xtriboulet\Documents\cs-progs\DIvoke\MessageBoxW_DIvoke\MessageBoxW_DIvoke\obj\Debug\netcoreapp3.1\MessageBoxW_DInvoke.genruntimeconfig.cache
