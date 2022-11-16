@@ -1,0 +1,52 @@
+     1                                  DEFAULT REL
+     2                                  
+     3                                  ; nasm -f elf64 -o call_me.o call_me.asm -l call_me.assembly -O0
+     4                                  ; ld -m elf_x86_64 -o call_me call_me.o
+     5                                  
+     6                                  global _start
+     7                                  
+     8                                  section .text
+     9                                  
+    10                                  _start:
+    11                                  ;Build stack
+    12 00000000 4889E5                    mov rbp,rsp
+    13 00000003 4883EC48                  sub rsp, 0x48
+    14                                  
+    15                                  
+    16                                  ;/usr/bin/echo -> RDI
+    17                                  ;6e 69 62 2f \72 73 75 2f \6f 68 63 65 \2f
+    18 00000007 48B82F7573722F6269-       mov rax, 0x6e69622f7273752f
+    18 00000010 6E                 
+    19 00000011 48BA2F6563686F0000-       mov rdx, 0x6f6863652f
+    19 0000001A 00                 
+    20 0000001B 488955D8                  mov [rbp-0x28], rdx
+    21 0000001F 488945D0                  mov [rbp-0x30], rax
+    22 00000023 488D5DD0                  lea rbx, [rbp-0x30]
+    23 00000027 53                        push rbx
+    24 00000028 488D1C24                  lea rbx, [rsp]
+    25 0000002C 6A00                      push 0x0
+    26                                  
+    27                                  ;PAYLOAD GOES HERE! as arg [1] -> RSI
+    28                                  ;20 44 41 4f \ 4c 59 41 50 \ 52 45 48 20 \ 53 45 4f 47 \ 21 45
+    29                                  
+    30 0000002E 48B85041594C4F4144-       mov rax, 0x2044414f4c594150
+    30 00000037 20                 
+    31 00000038 48BA474F4553204845-       mov rdx, 0x5245482053454f47
+    31 00000041 52                 
+    32 00000042 B945210000                mov rcx, 0x00002145
+    33 00000047 48894DF0                  mov [rbp-0x10], rcx
+    34 0000004B 488955E8                  mov [rbp-0x18], rdx
+    35 0000004F 488945E0                  mov [rbp-0x20], rax
+    36 00000053 488D4DE0                  lea rcx, [rbp-0x20]
+    37 00000057 51                        push rcx; FIRST ARGUMENT EXECUTED BY ECHO, REMEMBER THIS IS A STACK
+    38                                  
+    39 00000058 51                        push rcx; LAST PUSH IS PSUEDO-HEADER FOR EXEC SECTION 
+    40                                  
+    41 00000059 488D3424                  lea rsi, [rsp]
+    42 0000005D 488B3B                    mov rdi, [rbx]
+    43                                  
+    44 00000060 BA00000000                mov rdx, 0x0
+    45 00000065 B83B000000                mov rax, 59  ;execve
+    46 0000006A 0F05                      syscall
+    47 0000006C B83C000000                mov rax, 60 ;EXIT
+    48 00000071 0F05                      syscall
