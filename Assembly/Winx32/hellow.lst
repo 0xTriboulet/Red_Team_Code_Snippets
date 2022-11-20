@@ -1,0 +1,29 @@
+     1                                          global    _main                ; declare main() method
+     2                                          extern    _printf              ; link to external library
+     3                                          segment  .data
+     4 00000000 48656C6C6F20776F72-             message: db   'Hello world!', 0xA, 0
+     4 00000009 6C64210A00         
+     5 0000000E 48656C6C6F20616761-             message_2: db   'Hello again!!', 0xA, 0
+     5 00000017 696E21210A00       
+     6                                          section .text
+     7                                  _other_2:
+     8 00000000 68[0E000000]                    push    message_2
+     9 00000005 E8(00000000)                    call    _printf
+    10 0000000A 5F                              pop     edi
+    11 0000000B C3                              ret
+    12                                  _other:
+    13 0000000C 68[00000000]                    push    message
+    14 00000011 E8(00000000)                    call    _printf
+    15 00000016 5F                              pop     edi
+    16 00000017 C3                              ret
+    17                                  _main:                           
+    18 00000018 68[24000000]                    push    _main+0xc
+    19 0000001D BF[0C000000]                    mov     edi, _other           
+    20 00000022 FFE7                            jmp     edi
+    21 00000024 68[30000000]                    push    _main+0x18
+    22 00000029 BF[00000000]                    mov     edi, _other_2
+    23 0000002E FFE7                            jmp     edi
+    24 00000030 83C404                          add     esp, 4            
+    25 00000033 C3                              ret                       
+    26                                          ; compile with  nasm -f win32 hellow.asm
+    27                                          ; link with  gcc hellow.obj -o hellow.exe
