@@ -1,0 +1,40 @@
+     1                                  extern GetStdHandle
+     2                                  extern WriteFile
+     3                                  extern ExitProcess
+     4                                  
+     5                                  section .rodata
+     6                                  
+     7 00000000 48656C6C6F20576F72-     msg db "Hello World!", 0x0d, 0x0a
+     7 00000009 6C64210D0A         
+     8                                  
+     9                                  msg_len equ $-msg
+    10                                  stdout_query equ -11
+    11                                  status equ 0
+    12                                  
+    13                                  section .data
+    14                                  
+    15 00000000 0000                    stdout dw 0
+    16 00000002 0000                    bytesWritten dw 0
+    17                                  
+    18                                  section .text
+    19                                  
+    20                                  global start
+    21                                  
+    22                                  start:
+    23 00000000 48C7C1F5FFFFFF              mov rcx, stdout_query
+    24 00000007 E8(00000000)                call GetStdHandle
+    25 0000000C 488905(00000000)            mov [rel stdout], rax
+    26                                  
+    27 00000013 488B0D(00000000)            mov  rcx, [rel stdout]
+    28 0000001A 48BA-                       mov  rdx, msg
+    28 0000001C [0000000000000000] 
+    29 00000024 41B80E000000                mov  r8, msg_len
+    30 0000002A 49B9-                       mov  r9, bytesWritten
+    30 0000002C [0200000000000000] 
+    31 00000034 6A00                        push qword 0
+    32 00000036 E8(00000000)                call WriteFile
+    33                                  
+    34 0000003B B900000000                  mov rcx, status
+    35 00000040 E8(00000000)                call ExitProcess
+    36                                  	;nasm -f win64 hello.asm -o hello_new.obj
+    37                                  	;link /entry:start /subsystem:console hello_new.obj kernel32.lib"
