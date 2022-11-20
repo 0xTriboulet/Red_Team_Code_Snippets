@@ -33,5 +33,5 @@ start:
 
     mov rcx, status
     call ExitProcess
-	;nasm -f win64 hello.asm -o hello_new.obj
+	;nasm -f win64 hello.asm -o hello_new.obj -l hello_new.assembly
 	;link /entry:start /subsystem:console hello_new.obj kernel32.lib"
