@@ -1,0 +1,47 @@
+     1                                  global _start
+     2                                  
+     3                                  section .text
+     4                                  
+     5                                  _start:
+     6 00000000 68[0B000000]                push _start+0xb
+     7 00000005 68[18000000]                push _push_ret
+     8 0000000A C3                          ret
+     9 0000000B 68[16000000]                push _start+0x16
+    10 00000010 68[2F000000]                push _push_ret_2
+    11 00000015 C3                          ret
+    12 00000016 EB2E                        jmp _exit
+    13                                  
+    14                                  
+    15                                  
+    16                                  _push_ret:
+    17                                  ;-----------------------HELLO!
+    18 00000018 B804000000                  mov eax, 0x4         ;system call number (sys_write)
+    19 0000001D BB01000000                  mov ebx, 0x1         ;file descriptor (stdout)
+    20 00000022 B9[00000000]                mov ecx, message     ;message to write
+    21 00000027 BA08000000                  mov edx, len         ;message length
+    22 0000002C CD80                        int 0x80             ;syscall
+    23 0000002E C3                          ret
+    24                                  
+    25                                  _push_ret_2:
+    26                                  ;-----------------------HELLO AGAIN!
+    27 0000002F B804000000                  mov eax, 0x4         ;system call number (sys_write)
+    28 00000034 BB01000000                  mov ebx, 0x1         ;file descriptor (stdout)
+    29 00000039 B9[08000000]                mov ecx, message_2   ;message to write
+    30 0000003E BA0D000000                  mov edx, len_2       ;message length
+    31 00000043 CD80                        int 0x80             ;syscall
+    32 00000045 C3                          ret
+    33                                  
+    34                                  
+    35                                  _exit:
+    36                                  ;-----------------------_SYS_EXIT
+    37 00000046 B801000000                  mov eax, 0x1        ;system call number (sys_exit)
+    38 0000004B BB00000000                  mov ebx, 0x0
+    39 00000050 CD80                        int 0x80            ;call kernel
+    40                                  
+    41                                  section .data
+    42 00000000 48454C4C4F210D0A            message: db "HELLO!", 0dh, 0ah
+    43                                      len equ $ - message   ;length of the string
+    44                                  
+    45 00000008 48454C4C4F20414741-         message_2: db "HELLO AGAIN!", 0ah
+    45 00000011 494E210A           
+    46                                      len_2 equ $ - message_2   ;length of the string

@@ -1,0 +1,44 @@
+     1                                  global _start
+     2                                  section .rodata
+     3 00000000 48656C6C6F2C20776F-       msg: db "Hello, world!", 10
+     3 00000009 726C64210A         
+     4                                    msglen: equ $ - msg
+     5 0000000E 0A                        a: db 10
+     6 0000000F 0A                        b: db 10
+     7 00000010 0A                        c: db 10
+     8 00000011 0A                        d: db 10
+     9 00000012 0A                        e: db 10
+    10 00000013 0A                        f: db 10
+    11 00000014 0A                        g: db 10
+    12 00000015 0A                        h: db 10
+    13 00000016 0A                        i: db 10
+    14 00000017 0A                        j: db 10
+    15                                  
+    16                                  section .text
+    17                                  
+    18                                  _start:
+    19 00000000 68[07000000]              push _start+0x7
+    20 00000005 EB11                      jmp _step
+    21 00000007 B800000000                mov rax, 0
+    22                                    
+    23 0000000C B83C000000                mov rax, 60 ;SYS EXIT
+    24 00000011 BF00000000                mov rdi, 0  ;
+    25 00000016 0F05                      syscall     ;
+    26                                  
+    27                                  _step:
+    28 00000018 68[3A000000]              push _step_2
+    29 0000001D 8A0425[0E000000]          mov al, [a]
+    30 00000024 8A1C25[0F000000]          mov bl, [b]
+    31 0000002B 8A0C25[10000000]          mov cl, [c]
+    32 00000032 8A1425[11000000]          mov dl, [d]
+    33 00000039 C3                        ret
+    34                                  
+    35                                  _step_2:
+    36 0000003A 50                        push rax
+    37 0000003B 4801D8                    add  rax, rbx
+    38 0000003E 4801C8                    add  rax, rcx
+    39 00000041 4801D0                    add  rax, rdx 
+    40 00000044 4889C3                    mov  rbx, rax
+    41 00000047 4883C408                  add  rsp, 0x8
+    42 0000004B C3                        ret
+    43                                  
