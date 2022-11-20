@@ -1,0 +1,20 @@
+     1                                  extern printf
+     2                                  
+     3                                  section .data
+     4 00000000 48656C6C6F20576F72-         msg db  'Hello World!'
+     4 00000009 6C6421             
+     5                                  section .text
+     6                                  global main
+     7                                  main:
+     8                                      ;write your code here
+     9 00000000 55                          push    rbp
+    10 00000001 4889E5                      mov     rbp, rsp
+    11                                      
+    12 00000004 48B9-                       mov     rcx, msg
+    12 00000006 [0000000000000000] 
+    13 0000000E 4883EC20                    sub     rsp, 32
+    14 00000012 E8(00000000)                call    printf
+    15 00000017 4883C420                    add     rsp, 32
+    16                                      
+    17 0000001B C9                          leave
+    18 0000001C C3                          ret

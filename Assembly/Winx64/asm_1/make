@@ -1,0 +1,4 @@
+hello.exe: hello64.obj
+	gcc -o hello64.exe -g hello64.obj
+hello.obj: hello64.asm
+	nasm -f win64 -F cv8 hello64.asm -l hello64.lst
