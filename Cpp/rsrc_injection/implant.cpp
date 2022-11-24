@@ -173,8 +173,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		token = strtok(NULL,"\\");
 	}
 
-	result = strcmp(strlwr(last),"myapp.exe");
-	if(result == 0){
+	result = strcmp(strlwr(last),"implant.exe");
+	if(result != 0){
 		MessageBox(NULL,last,"HELLO!", MB_OKCANCEL);
 		return 0;
 	}
