@@ -1,1 +1,0 @@
-#define FAVICON_ICO 100
