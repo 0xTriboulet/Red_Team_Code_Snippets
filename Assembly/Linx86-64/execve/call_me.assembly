@@ -1,0 +1,38 @@
+     1                                  DEFAULT REL
+     2                                  
+     3                                  ; nasm -f elf64 -o call_me.o call_me.asm -l call_me.assembly -O0
+     4                                  ; ld -m elf_x86_64 -o call_me call_me.o
+     5                                  
+     6                                  global _start
+     7                                  
+     8                                  section .text
+     9                                  
+    10                                  _start:
+    11                                  ; build stack
+    12 00000000 4889E5                    mov  rbp, rsp
+    13 00000003 4881EC48000000            sub  rsp, 0x48
+    14                                  
+    15 0000000A 48B83B000000000000-       mov  rax, 59  ;execve
+    15 00000013 00                 
+    16 00000014 4831C9                    xor   rcx, rcx
+    17 00000017 51                        push  rcx
+    18 00000018 488D0D36000000            lea   rcx, [rel arg1]
+    19 0000001F 51                        push  rcx
+    20 00000020 488D0D20000000            lea   rcx, [rel arg0]
+    21 00000027 51                        push  rcx
+    22                                  
+    23 00000028 488D3D18000000            lea  rdi, [rel arg0] ;cmd
+    24 0000002F 488D3424                  lea  rsi, [rsp] ;args
+    25 00000033 4831D2                    xor  rdx, rdx ;env
+    26 00000036 0F05                      syscall
+    27                                  
+    28 00000038 4831FF                    xor  rdi, rdi
+    29 0000003B 48B83C000000000000-       mov  rax, 60
+    29 00000044 00                 
+    30 00000045 0F05                      syscall
+    31                                  
+    32 00000047 2F7573722F62696E2F-     arg0: db "/usr/bin/echo", 0 ; COMMAND GOES HERE
+    32 00000050 6563686F00         
+    33 00000055 5041594C4F41442047-     arg1: db "PAYLOAD GOES HERE!", 10, 0, 0 ; ARGUMENTS GO HERE
+    33 0000005E 4F4553204845524521-
+    33 00000067 0A0000             
