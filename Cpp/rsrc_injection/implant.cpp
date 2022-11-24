@@ -9,7 +9,7 @@ Final Dropper should
 - shellcode == MessageBox (explorer.exe)
 - extract shellcode from .rsrc
 - decrypt shell code (XOR)
-- inject shellcode into explorer.exec
+- inject shellcode into explorer.exe
 - get rid of console pop up
 
 
