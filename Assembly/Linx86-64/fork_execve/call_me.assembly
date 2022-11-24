@@ -1,0 +1,52 @@
+     1                                  DEFAULT REL
+     2                                  
+     3                                  ; nasm -f elf64 -o call_me.o call_me.asm -l call_me.assembly -O0
+     4                                  ; ld -m elf_x86_64 -o call_me call_me.o
+     5                                  
+     6                                  global _start
+     7                                  
+     8                                  section .text
+     9                                  
+    10                                  _start:
+    11                                  
+    12 00000000 4889E5                    mov  rbp, rsp; build stack
+    13 00000003 4881EC48000000            sub  rsp, 0x48
+    14                                  
+    15 0000000A 4831C9                    xor   rcx, rcx ; clear stack
+    16 0000000D 51                        push  rcx
+    17                                  
+    18 0000000E 48B839000000000000-       mov  rax, 57 ; sys_fork
+    18 00000017 00                 
+    19 00000018 0F05                      syscall
+    20                                  
+    21 0000001A 488D0D1E000000            lea    rcx, [rel _child] ; move child address to rcx
+    22 00000021 488D1D0C000000            lea    rbx, [rel _parent] ; move parent address to rbx
+    23 00000028 483D00000000              cmp    rax, 0 ; check if parent
+    24 0000002E 480F44CB                  cmove  rcx, rbx ; conditional move rbx to rcx if parent
+    25 00000032 FFE1                      jmp    rcx ; jump to rcx
+    26                                  
+    27                                  _parent:
+    28 00000034 4881C448000000            add  rsp, 0x48 ; break down stack
+    29 0000003B 4889EC                    mov  rsp, rbp
+    30 0000003E C3                        ret ; return to program call
+    31                                  
+    32                                  _child:
+    33 0000003F 48B83B000000000000-       mov  rax, 59  ; execve
+    33 00000048 00                 
+    34                                  
+    35 00000049 488D0D27000000            lea   rcx, [rel arg1] ; push arguments
+    36 00000050 51                        push  rcx
+    37                                  
+    38 00000051 488D0D11000000            lea   rcx, [rel arg0] ; push command
+    39 00000058 51                        push  rcx
+    40                                  
+    41 00000059 488D3D09000000            lea  rdi, [rel arg0] ; cmd
+    42 00000060 488D3424                  lea  rsi, [rsp] ; args
+    43 00000064 4831D2                    xor  rdx, rdx ; env
+    44 00000067 0F05                      syscall
+    45                                  
+    46 00000069 2F7573722F62696E2F-     arg0: db "/usr/bin/echo", 0 ; COMMAND GOES HERE
+    46 00000072 6563686F00         
+    47 00000077 5041594C4F41442047-     arg1: db "PAYLOAD GOES HERE!", 10, 0, 0 ; ARGUMENTS GO HERE
+    47 00000080 4F4553204845524521-
+    47 00000089 0A0000             
