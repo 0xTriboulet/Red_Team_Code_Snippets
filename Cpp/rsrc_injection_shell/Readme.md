@@ -1,6 +1,11 @@
 Using the resource section of a PE file to hide a reverse shell payload that connects to a nc listener on Kali. The shell session and .exe survive command execution
 indefinitely as of 1200PST 11/26/2022.
 
+implant.exe works by decrypting the payload and injecting it into the target process (hardcoded as msteams.exe). The payload then connects to our nc listener as a cmd
+shell session.
+
+Note: msteams.exe will terminate as a result of this payload's execution, but the session will remain open and implant.exe will remain on disk.
+
 1) Edit reverse_shell.c to your listener's specification and compile it with .\compile.bat.
 
 2) Run pe2shc.exe on reverse_shell.exe and output shell.bin
