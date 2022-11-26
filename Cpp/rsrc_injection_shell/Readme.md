@@ -4,6 +4,7 @@ indefinitely as of 1200PST 11/26/2022.
 1) Edit reverse_shell.c to your listener's specification and compile it with .\compile.bat.
 
 2) Run pe2shc.exe on reverse_shell.exe and output shell.bin
+  > pe2schc.exe: https://github.com/hasherezade/pe_to_shellcode/releases
 
 3) Encrypt shell.bin with xorencrypt.py (this will give you favicon.ico)
 
