@@ -30,7 +30,7 @@ if(args.input):
 
     ## CONVERT WRITE OUT.ZIP TO OUT.TXT IN BASE64
     with open("out.zip", "rb") as file:                                                    ##OPEN OUT.ZIP
-        while(byte := file.read()):                                                        ##READ OUT.ZIP BYTES          
+        while(byte := file.read()):                                                        ##READ OUT.ZIP BYTES
             with open("out.txt", "ab") as out:                                             ##OPEN OUT.TXT
                 out.write(base64.b64encode(byte))                                          ##WRITE AS BASE64
 
@@ -45,7 +45,7 @@ if(args.output):
 
     ## CONVERT WRITE OUT.ZIP TO OUT.TXT IN BASE64
     with open("in.txt", "r") as file:                                                       ##OPEN IN.ZIP
-        while(byte := file.read()):                                                         ##READ IN.ZIP BYTES         
+        while(byte := file.read()):                                                         ##READ IN.ZIP BYTES
             with open("in.zip", "ab") as into:                                              ##OPEN IN.TXT
                 into.write(base64.b64decode(byte))                                          ##WRITE AS BYTES
     
