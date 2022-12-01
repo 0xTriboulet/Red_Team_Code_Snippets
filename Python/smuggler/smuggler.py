@@ -10,13 +10,9 @@ import json
 ### PARSE ARGS
 parser = argparse.ArgumentParser(description=
 "smuggler.py ORIGINAL_FILE -i || smuggler.py -o OUTPUT_SUBDIRECTORY")
-
 parser.add_argument("input_file", metavar="ORIGINAL_FILE", nargs="+", help="local input file")
-
 parser.add_argument("-i","--input", help="this is an input operation, will output base64 out.txt from ORIGNAL_FILE", action="store_true")
-
 parser.add_argument("-o","--output", help="this is an output operation, ORIGINAL_FILE from in.txt", action="store_true")
-
 args = parser.parse_args()
 
 
