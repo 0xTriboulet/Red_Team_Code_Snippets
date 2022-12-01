@@ -9,7 +9,7 @@ import json
 
 ### PARSE ARGS
 parser = argparse.ArgumentParser(description=
-"smuggler.py FILENAME -i || smuggler.py -o OUTPUT_SUBDIRECTORY")
+"smuggler.py ORIGINAL_FILE -i || smuggler.py -o OUTPUT_SUBDIRECTORY")
 
 parser.add_argument("input_file", metavar="ORIGINAL_FILE", nargs="+", help="local input file")
 
