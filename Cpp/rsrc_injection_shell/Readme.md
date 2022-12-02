@@ -25,5 +25,6 @@ Note: msteams.exe will terminate as a result of this payload's execution, but th
 
 
 As of 1700PST 12/1/2022 this payload is now detected.
+
 ![image](https://user-images.githubusercontent.com/22229087/205192825-ce6ff719-bd58-41ec-b1ca-33dcedce8ffe.png)
 
