@@ -6,3 +6,6 @@ Short python script that converts any file into a base64 encoded zip file stored
 ![image](https://user-images.githubusercontent.com/22229087/205515548-cd16a267-72e2-4079-828e-cc05bcb93a9b.png)
 
 
+XORing remains optional though
+
+![image](https://user-images.githubusercontent.com/22229087/205515977-d51013ef-0972-4ad1-8b15-faec22db0dde.png)
