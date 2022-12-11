@@ -2,6 +2,8 @@ A self-staging PE binary that achieves hardcoded injection into Teams.exe on Win
 
 The binary works by passing useful information (stage, threadId) to the next stage before terminating. This breaks the process tree and obfuscates control flow graphs such that it bypasses the most up to date Windows Defender definitions as of 0800 PST 11 December 2022.
 
+Note: This is a PoC, the directory path to Teams.exe is hardcoded and will have to be changed as appropriate in Red Team engagements
+
 1) Edit reverse_shell.c to your listener's specification and compile it with .\compile.bat.
 
 2) Run pe2shc.exe on reverse_shell.exe and output shell.bin
