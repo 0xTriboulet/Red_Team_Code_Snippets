@@ -25,7 +25,7 @@ Note 2: msteams.exe is the Windows 11 implementation of the Teams executable. On
 
 
 
-As of 1700PST 12/1/2022 this payload is now detected.
+As of 1700PST 12/1/2022 this injector/payload is now detected.
 
 ![image](https://user-images.githubusercontent.com/22229087/205192825-ce6ff719-bd58-41ec-b1ca-33dcedce8ffe.png)
 
