@@ -4,7 +4,8 @@ indefinitely as of 1200PST 11/26/2022.
 implant.exe works by decrypting the payload and injecting it into the target process (hardcoded as msteams.exe). The payload then connects to our nc listener as a cmd
 shell session.
 
-Note: msteams.exe will terminate as a result of this payload's execution, but the session will remain open and implant.exe will remain on disk.
+Note 1: msteams.exe will terminate as a result of this payload's execution, but the session will remain open and implant.exe will remain on disk.
+Note 2: msteams.exe is the Windows 11 implementation of the Teams executable. On systems Windows 10 and earlier you'll be looking for Teams.exe
 
 1) Edit reverse_shell.c to your listener's specification and compile it with .\compile.bat.
 
