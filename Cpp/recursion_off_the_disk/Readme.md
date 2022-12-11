@@ -6,7 +6,7 @@ The binary works by passing useful information (stage, threadId) to the next sta
 
 2) Run pe2shc.exe on reverse_shell.exe and output shell.bin
 
-  ```pe2schc.exe: https://github.com/hasherezade/pe_to_shellcode/releases```
+      ```pe2schc.exe: https://github.com/hasherezade/pe_to_shellcode/releases```
 
 3) Encrypt shell.bin with xorencrypt.py (this will give you favicon.ico)
 
