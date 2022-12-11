@@ -10,7 +10,7 @@ The binary works by passing useful information (stage, threadId) to the next sta
 
 3) Encrypt shell.bin with xorencrypt.py (this will give you favicon.ico)
 
-4) Compile ROTD.cpp with .\compile.bat
+4) Compile rotd.cpp with .\compile.bat
 
 5) ????
 
