@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
     printf("payload size :     %d\n",size);
 
     //int perms = PROT_READ | PROT_WRITE | PROT_EXEC;
-    int perms = PROT_WRITE | PROT_EXEC; //reduce cmd buffer permissions since if we don't need to write in this script (depends on the payload encoding)
+    int perms = PROT_WRITE | PROT_EXEC; //reduce cmd buffer permissions since if we don't need to write in this script (depends on the payload)
     printf("prot permissions : %d\n",perms);
 
     // we have to page-align the address we pass into mprotect
