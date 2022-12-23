@@ -1,0 +1,5 @@
+@ECHO OFF
+
+cl.exe /W1 /D_USRDLL /D_CRT_SECURE_NO_WARNINGS /D_WINDLL *.cpp /MT /link /DLL /OUT:reverse.dll
+echo Cleaning up...
+del *.obj *.lib *.exp
