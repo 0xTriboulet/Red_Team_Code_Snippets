@@ -10,7 +10,7 @@
 ;   Get kernel32.dll base address
 
 ;modified by 0xTriboulet
-;change cmd to execute commands through this WinExec
+;change cmd to execute commands through WinExec
 bits 64
 default rel
 
