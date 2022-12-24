@@ -104,7 +104,7 @@ mul rcx                     ; RAX & RDX & RCX = 0x0
 							; calc.exe | String length : 8
 push rax                    ; Null terminate string on stack
 lea rax, qword [rel cmd]
-push rax    			    ; 
+push rax    	
 mov rcx, rax                ; RSP = cmd,0x0
 inc rdx                     ; RDX = 0x1 = SW_SHOWNORMAL
 sub rsp, 0x20               ; WinExec clobbers first 0x20 bytes of stack (Overwrites our command string when proxied to CreatProcessA)
