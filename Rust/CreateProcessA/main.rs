@@ -44,7 +44,7 @@ fn main() {
       Some(null_mut()),
       Some(null_mut()),
       false,
-      CREATE_NEW_CONSOLE | CREATE_SUSPENDED,
+      CREATE_NEW_CONSOLE,
       Some(null_mut()),
       PCSTR::null(),
       &mut si.StartupInfo,
