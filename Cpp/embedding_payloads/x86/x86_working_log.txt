@@ -1,0 +1,299 @@
+Log will be redirected to C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\x86_working_log.txt.
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+INT3 breakpoint at ntdll.7781201D!
+Breakpoint disabled!
+Thread 40048 created, Entry: ntdll.777E59C0, Parameter: 00513FB0
+DLL Loaded: 774D0000 C:\Windows\SysWOW64\msvcrt.dll
+Thread 47792 created, Entry: ntdll.777E59C0, Parameter: 00513FB0
+DLL Loaded: 75670000 C:\Windows\SysWOW64\user32.dll
+DLL Loaded: 76B20000 C:\Windows\SysWOW64\win32u.dll
+DLL Loaded: 75AF0000 C:\Windows\SysWOW64\gdi32.dll
+DLL Loaded: 77040000 C:\Windows\SysWOW64\gdi32full.dll
+DLL Loaded: 775A0000 C:\Windows\SysWOW64\msvcp_win.dll
+DLL Loaded: 76F20000 C:\Windows\SysWOW64\ucrtbase.dll
+Thread 38440 created, Entry: ntdll.777E59C0, Parameter: 00513FB0
+Breakpoint at 57DDC9E0 (TLS Callback 1 (libgcc_s_dw2-1.dll)) set!
+Breakpoint at 57DDC990 (TLS Callback 2 (libgcc_s_dw2-1.dll)) set!
+DLL Loaded: 57DC0000 C:\mingw32\bin\libgcc_s_dw2-1.dll
+System breakpoint reached!
+INT3 breakpoint "TLS Callback 1 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.57DDC9E0!
+INT3 breakpoint "TLS Callback 2 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.57DDC990!
+DLL Loaded: 75A30000 C:\Windows\SysWOW64\imm32.dll
+INT3 breakpoint "TLS Callback 1" at even_better.00401650!
+INT3 breakpoint "TLS Callback 2" at even_better.00401600!
+INT3 breakpoint at <even_better.EntryPoint> (00412000)!
+INT3 breakpoint at even_better.0041202B!
+Thread 7484 created, Entry: <even_better.sub_412047> (00412047), Parameter: 00000000
+INT3 breakpoint at even_better.004014F0!
+INT3 breakpoint at even_better.0040151A!
+INT3 breakpoint at user32.756F1A20!
+INT3 breakpoint at user32.756F1C89!
+INT3 breakpoint at user32.75693AAE!
+INT3 breakpoint at user32.75693AE3!
+INT3 breakpoint at user32.756F1CAF!
+INT3 breakpoint at user32.75693AAE!
+INT3 breakpoint at user32.75693AE3!
+INT3 breakpoint at user32.756F1D09!
+INT3 breakpoint at user32.756F1D70!
+INT3 breakpoint at gdi32full.7709FE05!
+DLL Loaded: 76B90000 C:\Windows\SysWOW64\sechost.dll
+DLL Loaded: 77120000 C:\Windows\SysWOW64\rpcrt4.dll
+DLL Loaded: 57E70000 C:\Windows\SysWOW64\TextShaping.dll
+DLL Loaded: 6DCA0000 C:\Windows\SysWOW64\uxtheme.dll
+DLL Loaded: 763D0000 C:\Windows\SysWOW64\combase.dll
+DLL Loaded: 76D00000 C:\Windows\SysWOW64\msctf.dll
+DLL Loaded: 76E80000 C:\Windows\SysWOW64\oleaut32.dll
+Thread 7484 exit
+DLL Loaded: 74C90000 C:\Windows\SysWOW64\kernel.appcore.dll
+DLL Loaded: 77720000 C:\Windows\SysWOW64\bcryptprimitives.dll
+DLL Loaded: 6CE10000 C:\Windows\SysWOW64\TextInputFramework.dll
+DLL Loaded: 6A250000 C:\Windows\SysWOW64\CoreUIComponents.dll
+DLL Loaded: 6A9F0000 C:\Windows\SysWOW64\CoreMessaging.dll
+DLL Loaded: 760E0000 C:\Windows\SysWOW64\ws2_32.dll
+DLL Loaded: 754D0000 C:\Windows\SysWOW64\ntmarta.dll
+DLL Loaded: 77440000 C:\Windows\SysWOW64\SHCore.dll
+DLL Loaded: 6E150000 C:\Windows\SysWOW64\WinTypes.dll
+DLL Loaded: 75A60000 C:\Windows\SysWOW64\advapi32.dll
+DLL Loaded: 03DB0000 C:\Windows\SysWOW64\WinTypes.dll
+DLL Unloaded: 03DB0000 wintypes.dll
+Thread 45076 created, Entry: ntdll.777E59C0, Parameter: 005107F0
+Thread 33132 created, Entry: ntdll.777E59C0, Parameter: 005107F0
+DLL Loaded: 76C10000 C:\Windows\SysWOW64\ole32.dll
+INT3 breakpoint at user32.756F1A26!
+INT3 breakpoint at even_better.0040151C!
+Thread 33132 exit
+Thread 47792 exit
+Thread 38440 exit
+Thread 40048 exit
+Thread 45076 exit
+Process stopped with exit code 0x0 (0)
+Saving database to C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 15ms
+Debugging stopped!
+Debugging: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\good.exe
+Database file: C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\good.exe.dd32
+Loading commandline...
+Loading database from C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\good.exe.dd32 16ms
+Process Started: 00750000 C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\good.exe
+  "C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\good.exe"
+  argv[0]: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\good.exe
+Breakpoint at 00751650 (TLS Callback 1) set!
+Breakpoint at 00751600 (TLS Callback 2) set!
+Breakpoint at 007513E0 (entry breakpoint) set!
+DLL Loaded: 777B0000 C:\Windows\SysWOW64\ntdll.dll
+DLL Loaded: 761B0000 C:\Windows\SysWOW64\kernel32.dll
+DLL Loaded: 75810000 C:\Windows\SysWOW64\KernelBase.dll
+Thread 9952 created, Entry: ntdll.777E59C0, Parameter: 01103F88
+DLL Loaded: 774D0000 C:\Windows\SysWOW64\msvcrt.dll
+Thread 31420 created, Entry: ntdll.777E59C0, Parameter: 01103F88
+DLL Loaded: 75670000 C:\Windows\SysWOW64\user32.dll
+DLL Loaded: 76B20000 C:\Windows\SysWOW64\win32u.dll
+DLL Loaded: 75AF0000 C:\Windows\SysWOW64\gdi32.dll
+DLL Loaded: 77040000 C:\Windows\SysWOW64\gdi32full.dll
+DLL Loaded: 775A0000 C:\Windows\SysWOW64\msvcp_win.dll
+DLL Loaded: 76F20000 C:\Windows\SysWOW64\ucrtbase.dll
+Thread 3660 created, Entry: ntdll.777E59C0, Parameter: 01103F88
+Breakpoint at 5748C9E0 (TLS Callback 1 (libgcc_s_dw2-1.dll)) set!
+Breakpoint at 5748C990 (TLS Callback 2 (libgcc_s_dw2-1.dll)) set!
+DLL Loaded: 57470000 C:\mingw32\bin\libgcc_s_dw2-1.dll
+System breakpoint reached!
+INT3 breakpoint "TLS Callback 1 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C9E0!
+INT3 breakpoint "TLS Callback 2 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C990!
+DLL Loaded: 75A30000 C:\Windows\SysWOW64\imm32.dll
+INT3 breakpoint "TLS Callback 1" at good.00751650!
+INT3 breakpoint "TLS Callback 2" at good.00751600!
+INT3 breakpoint "entry breakpoint" at <good.EntryPoint> (007513E0)!
+INT3 breakpoint at <good.sub_7514F0> (007514F0)!
+Thread 31420 exit
+Thread 3660 exit
+Thread 9952 exit
+Process stopped with exit code 0x0 (0)
+Saving database to C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\good.exe.dd32 16ms
+Debugging stopped!
+Debugging: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Database file: C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32
+Loading commandline...
+Loading database from C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 0ms
+Process Started: 00400000 C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+  "C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe"
+  argv[0]: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Breakpoint at 00401650 (TLS Callback 1) set!
+Breakpoint at 00401600 (TLS Callback 2) set!
+Error setting breakpoint at 00412000! (IsBPXEnabled)
+DLL Loaded: 777B0000 C:\Windows\SysWOW64\ntdll.dll
+DLL Loaded: 761B0000 C:\Windows\SysWOW64\kernel32.dll
+DLL Loaded: 75810000 C:\Windows\SysWOW64\KernelBase.dll
+Thread 41768 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+DLL Loaded: 774D0000 C:\Windows\SysWOW64\msvcrt.dll
+Thread 45988 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+DLL Loaded: 75670000 C:\Windows\SysWOW64\user32.dll
+DLL Loaded: 76B20000 C:\Windows\SysWOW64\win32u.dll
+DLL Loaded: 75AF0000 C:\Windows\SysWOW64\gdi32.dll
+DLL Loaded: 77040000 C:\Windows\SysWOW64\gdi32full.dll
+DLL Loaded: 775A0000 C:\Windows\SysWOW64\msvcp_win.dll
+DLL Loaded: 76F20000 C:\Windows\SysWOW64\ucrtbase.dll
+Thread 39192 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+Breakpoint at 5748C9E0 (TLS Callback 1 (libgcc_s_dw2-1.dll)) set!
+Breakpoint at 5748C990 (TLS Callback 2 (libgcc_s_dw2-1.dll)) set!
+DLL Loaded: 57470000 C:\mingw32\bin\libgcc_s_dw2-1.dll
+System breakpoint reached!
+INT3 breakpoint "TLS Callback 1 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C9E0!
+INT3 breakpoint "TLS Callback 2 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C990!
+DLL Loaded: 75A30000 C:\Windows\SysWOW64\imm32.dll
+INT3 breakpoint "TLS Callback 1" at even_better.00401650!
+INT3 breakpoint "TLS Callback 2" at even_better.00401600!
+INT3 breakpoint at <even_better.EntryPoint> (00412000)!
+INT3 breakpoint at even_better.0041202B!
+Thread 38752 created, Entry: <even_better.sub_412047> (00412047), Parameter: 00000000
+INT3 breakpoint at even_better.004014F0!
+INT3 breakpoint at even_better.0040151A!
+INT3 breakpoint at user32.756F1A20!
+Thread 41768 exit
+Thread 39192 exit
+Thread 38752 exit
+Thread 45988 exit
+Process stopped with exit code 0x0 (0)
+Saving database to C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 16ms
+Debugging stopped!
+Debugging: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Database file: C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32
+Loading commandline...
+Loading database from C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 15ms
+Process Started: 00400000 C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+  "C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe"
+  argv[0]: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Breakpoint at 00401650 (TLS Callback 1) set!
+Breakpoint at 00401600 (TLS Callback 2) set!
+Error setting breakpoint at 00412000! (IsBPXEnabled)
+DLL Loaded: 777B0000 C:\Windows\SysWOW64\ntdll.dll
+DLL Loaded: 761B0000 C:\Windows\SysWOW64\kernel32.dll
+DLL Loaded: 75810000 C:\Windows\SysWOW64\KernelBase.dll
+Thread 15240 created, Entry: ntdll.777E59C0, Parameter: 00723FB0
+DLL Loaded: 774D0000 C:\Windows\SysWOW64\msvcrt.dll
+Thread 37620 created, Entry: ntdll.777E59C0, Parameter: 00723FB0
+DLL Loaded: 75670000 C:\Windows\SysWOW64\user32.dll
+DLL Loaded: 76B20000 C:\Windows\SysWOW64\win32u.dll
+DLL Loaded: 75AF0000 C:\Windows\SysWOW64\gdi32.dll
+DLL Loaded: 77040000 C:\Windows\SysWOW64\gdi32full.dll
+DLL Loaded: 775A0000 C:\Windows\SysWOW64\msvcp_win.dll
+DLL Loaded: 76F20000 C:\Windows\SysWOW64\ucrtbase.dll
+Breakpoint at 5748C9E0 (TLS Callback 1 (libgcc_s_dw2-1.dll)) set!
+Breakpoint at 5748C990 (TLS Callback 2 (libgcc_s_dw2-1.dll)) set!
+DLL Loaded: 57470000 C:\mingw32\bin\libgcc_s_dw2-1.dll
+Thread 24132 created, Entry: ntdll.777E59C0, Parameter: 00723FB0
+System breakpoint reached!
+INT3 breakpoint "TLS Callback 1 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C9E0!
+INT3 breakpoint "TLS Callback 2 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C990!
+DLL Loaded: 75A30000 C:\Windows\SysWOW64\imm32.dll
+INT3 breakpoint "TLS Callback 1" at even_better.00401650!
+INT3 breakpoint "TLS Callback 2" at even_better.00401600!
+INT3 breakpoint at <even_better.EntryPoint> (00412000)!
+INT3 breakpoint at even_better.0041202B!
+Thread 13112 created, Entry: <even_better.sub_412047> (00412047), Parameter: 00000000
+INT3 breakpoint at even_better.004014F0!
+INT3 breakpoint at even_better.0040151A!
+INT3 breakpoint at user32.756F1A20!
+INT3 breakpoint at user32.756F1C89!
+INT3 breakpoint at user32.75693AAE!
+INT3 breakpoint at user32.75693AE3!
+INT3 breakpoint at user32.756F1CAF!
+INT3 breakpoint at user32.75693AAE!
+INT3 breakpoint at user32.75693AE3!
+INT3 breakpoint at user32.756F1D09!
+INT3 breakpoint at user32.756F1D70!
+INT3 breakpoint at gdi32full.7709FE05!
+DLL Loaded: 76B90000 C:\Windows\SysWOW64\sechost.dll
+DLL Loaded: 77120000 C:\Windows\SysWOW64\rpcrt4.dll
+DLL Loaded: 57E70000 C:\Windows\SysWOW64\TextShaping.dll
+DLL Loaded: 6DCA0000 C:\Windows\SysWOW64\uxtheme.dll
+DLL Loaded: 763D0000 C:\Windows\SysWOW64\combase.dll
+DLL Loaded: 76D00000 C:\Windows\SysWOW64\msctf.dll
+DLL Loaded: 76E80000 C:\Windows\SysWOW64\oleaut32.dll
+Thread 13112 exit
+DLL Loaded: 74C90000 C:\Windows\SysWOW64\kernel.appcore.dll
+DLL Loaded: 77720000 C:\Windows\SysWOW64\bcryptprimitives.dll
+DLL Loaded: 6CE10000 C:\Windows\SysWOW64\TextInputFramework.dll
+DLL Loaded: 6A250000 C:\Windows\SysWOW64\CoreUIComponents.dll
+DLL Loaded: 6A9F0000 C:\Windows\SysWOW64\CoreMessaging.dll
+DLL Loaded: 760E0000 C:\Windows\SysWOW64\ws2_32.dll
+DLL Loaded: 754D0000 C:\Windows\SysWOW64\ntmarta.dll
+DLL Loaded: 6E150000 C:\Windows\SysWOW64\WinTypes.dll
+DLL Loaded: 03E10000 C:\Windows\SysWOW64\WinTypes.dll
+DLL Loaded: 77440000 C:\Windows\SysWOW64\SHCore.dll
+DLL Unloaded: 03E10000 wintypes.dll
+DLL Loaded: 75A60000 C:\Windows\SysWOW64\advapi32.dll
+Thread 24132 exit
+Thread 15240 exit
+Thread 37620 exit
+Process stopped with exit code 0x0 (0)
+Saving database to C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 15ms
+Debugging stopped!
+Debugging: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Database file: C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32
+Loading commandline...
+Loading database from C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 16ms
+Process Started: 00400000 C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+  "C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe"
+  argv[0]: C:\Users\0xtriboulet\Desktop\maldev\Zz.Projects\TTPs\1.embedding_payloads\x86\even_better.exe
+Breakpoint at 00401650 (TLS Callback 1) set!
+Breakpoint at 00401600 (TLS Callback 2) set!
+Error setting breakpoint at 00412000! (IsBPXEnabled)
+DLL Loaded: 777B0000 C:\Windows\SysWOW64\ntdll.dll
+DLL Loaded: 761B0000 C:\Windows\SysWOW64\kernel32.dll
+DLL Loaded: 75810000 C:\Windows\SysWOW64\KernelBase.dll
+Thread 34892 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+DLL Loaded: 774D0000 C:\Windows\SysWOW64\msvcrt.dll
+Thread 44976 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+DLL Loaded: 75670000 C:\Windows\SysWOW64\user32.dll
+DLL Loaded: 76B20000 C:\Windows\SysWOW64\win32u.dll
+DLL Loaded: 75AF0000 C:\Windows\SysWOW64\gdi32.dll
+DLL Loaded: 77040000 C:\Windows\SysWOW64\gdi32full.dll
+DLL Loaded: 775A0000 C:\Windows\SysWOW64\msvcp_win.dll
+DLL Loaded: 76F20000 C:\Windows\SysWOW64\ucrtbase.dll
+Thread 8260 created, Entry: ntdll.777E59C0, Parameter: 006F3FB0
+Breakpoint at 5748C9E0 (TLS Callback 1 (libgcc_s_dw2-1.dll)) set!
+Breakpoint at 5748C990 (TLS Callback 2 (libgcc_s_dw2-1.dll)) set!
+DLL Loaded: 57470000 C:\mingw32\bin\libgcc_s_dw2-1.dll
+System breakpoint reached!
+INT3 breakpoint "TLS Callback 1 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C9E0!
+INT3 breakpoint "TLS Callback 2 (libgcc_s_dw2-1.dll)" at libgcc_s_dw2-1.5748C990!
+DLL Loaded: 75A30000 C:\Windows\SysWOW64\imm32.dll
+INT3 breakpoint "TLS Callback 1" at even_better.00401650!
+INT3 breakpoint "TLS Callback 2" at even_better.00401600!
+INT3 breakpoint at <even_better.EntryPoint> (00412000)!
+INT3 breakpoint at even_better.0041202B!
+Thread 38008 created, Entry: <even_better.sub_412047> (00412047), Parameter: 00000000
+INT3 breakpoint at even_better.004014F0!
+INT3 breakpoint at even_better.0040151A!
+Stopping command thread...
+Stopping running debuggee...
+Thread 38008 exit
+Thread 34892 exit
+Thread 8260 exit
+Thread 44976 exit
+Process stopped with exit code 0x0 (0)
+Saving database to C:\Users\0xtriboulet\Documents\x64dbg\release\x32\db\even_better.exe.dd32 0ms
+Debugging stopped!
+Aborting scripts...
+Unloading plugins...
+Cleaning up allocated data...
+Cleaning up wait objects...
+Cleaning up debugger threads...
+Saving notes...
