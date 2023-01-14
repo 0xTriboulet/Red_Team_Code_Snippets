@@ -1,0 +1,17 @@
+[package]
+name = "rusty_calc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+opt-level = 0
+
+
+
+[dependencies]
+errno = "0.2.8"
+libc = "0.2.139"
+windows-sys = {version = "0.42.0", features=["Win32_System_Memory", "Win32_Foundation", "Win32_System_Threading", 
+"Win32_Security", "Win32_System_Diagnostics_Debug","Win32_System_LibraryLoader"]}
